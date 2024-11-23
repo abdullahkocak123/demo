@@ -18,15 +18,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUsers() {
 
-        User user = new User();
-        user.setId(1);
-        user.setName("Abdullah");
-        user.setSurname("Koçak");
-
-        userRepository.save(user);
-
-
-
         return (List<User>) userRepository.findAll();
-    }
+     }
 }
